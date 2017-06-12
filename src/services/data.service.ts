@@ -37,8 +37,8 @@ export class DataService {
 
   handleError(error: any){
 
-    // console.log('An error occurred!');
-    // console.log(error);
+    console.log('An error occurred in data.service:');
+    console.log(error);
     return Promise.reject(error.message || error);
 
   }
