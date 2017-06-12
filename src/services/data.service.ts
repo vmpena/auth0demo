@@ -21,6 +21,24 @@ export class DataService {
 
   constructor(private http: Http) { }
 
+  // (1) I think that this is where the call to Auth0 should take place.
+  // There should be a method here that contacts Auth0 to get the bearer token.
+  getToken(){
+
+  }
+
+  // (2) Then there should be a method that receives the response from Auth0,
+  // and extracts the bearer token received from the method above
+  extractToken(){
+
+  }
+
+  // (3) There should be a method that contacts Auth0 using the bearer token
+  // from the steps above and sends it to the API server
+  sendTokenToServer(){
+
+  }
+
   // test method
   getDocuments(){
     this.fullPath = this.dataURL + "test";
